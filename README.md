@@ -1,6 +1,5 @@
-USTH ICT Android Development 2024
-========================================
+# USTH ICT Android Development 2024
 
-* **Your ID**
-* **Your name**
-* **Your class**
+-   **Your ID: 22BI13094**
+-   **Your name: Nguyen Quy Duc**
+-   **Your class: ICT Class 1**
