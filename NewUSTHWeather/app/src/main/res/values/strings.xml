@@ -21,4 +21,6 @@
     <string name="scattered_thunderstorms_n24c_27c">Scattered Thunderstorms\n24C - 27C</string>
     <string name="showers_n24c_26c">Showers\n24C - 26C</string>
     <string name="scattered_thunderstorms_n23c_27c">Scattered Thunderstorms\n23C - 27C</string>
+    <string name="_12c_n_cloudy">12C\nCloudy</string>
+    <string name="paris">Paris</string>
 </resources>

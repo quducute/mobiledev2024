@@ -5,9 +5,11 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -49,6 +51,9 @@ public class ForecastFragment extends Fragment {
         fragment.setArguments(args);
         return fragment;
     }
+    private static final String TAG = "Weather";
+    ImageButton sb;
+    ImageButton rb;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,7 +68,6 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
 //        LinearLayout view = new LinearLayout(getContext());
 //        view.setBackgroundColor(Color.GREEN);
 //        view.setOrientation(LinearLayout.VERTICAL);
@@ -76,6 +80,26 @@ public class ForecastFragment extends Fragment {
 //
 //        view.addView(textView);
 //        view.addView(imageView);
+
+        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
+
+        ImageButton sb = view.findViewById(R.id.setting_button);
+        sb.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Log.i(TAG, "Setting!");
+                }
+            }
+        );
+
+        ImageButton rb = view.findViewById(R.id.refresh_button);
+        rb.setOnClickListener(new View.OnClickListener() {
+                @Override
+                    public void onClick(View view) {
+                        Log.i(TAG, "Refresh!");
+                }
+            }
+        );
 
         return view;
     }

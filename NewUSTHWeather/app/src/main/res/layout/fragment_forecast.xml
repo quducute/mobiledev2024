@@ -20,12 +20,13 @@
             android:layout_marginStart="10dp"
             android:gravity="start|center"
             android:text="@string/app_name"
-            android:textColor="@android:color/white"
+            android:textColor="@color/white"
             android:textSize="30sp"
             android:textStyle="bold"/>
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="match_parent"
+            android:id="@+id/refresh_button"
             android:contentDescription="@string/refresh"
             android:gravity="center"
             android:src="@drawable/refresh_button"
@@ -34,6 +35,7 @@
         <ImageButton
             android:layout_width="60dp"
             android:layout_height="match_parent"
+            android:id="@+id/setting_button"
             android:contentDescription="@string/setting"
             android:gravity="center"
             android:src="@drawable/setting_button"
@@ -43,18 +45,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="220dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="#B9BFFF">
+        android:background="#D2E0FF">
         <TextView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/mon"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <ImageView
             android:layout_width="50dp"
@@ -69,7 +71,7 @@
             android:layout_marginStart="10dp"
             android:gravity="center|start"
             android:text="@string/partly_cloudy_n24c_31c"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
     </LinearLayout>
     <LinearLayout
@@ -79,13 +81,13 @@
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="#B9BFFF">
+        android:background="#D2E0FF">
         <TextView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/tue"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <ImageView
             android:layout_width="50dp"
@@ -100,7 +102,7 @@
             android:layout_marginStart="10dp"
             android:gravity="center|start"
             android:text="@string/showers_n24c_30c"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
     </LinearLayout>
     <LinearLayout
@@ -110,13 +112,13 @@
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="#B9BFFF">
+        android:background="#D2E0FF">
         <TextView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/wed"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <ImageView
             android:layout_width="50dp"
@@ -131,7 +133,7 @@
             android:layout_marginStart="10dp"
             android:gravity="center|start"
             android:text="@string/rain_n22c_23c"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
     </LinearLayout>
     <LinearLayout
@@ -141,13 +143,13 @@
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="#B9BFFF">
+        android:background="#D2E0FF">
         <TextView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/thu"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <ImageView
             android:layout_width="50dp"
@@ -162,7 +164,7 @@
             android:layout_marginStart="10dp"
             android:gravity="center|start"
             android:text="@string/scattered_showers_n22c_27c"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
     </LinearLayout>
     <LinearLayout
@@ -172,13 +174,13 @@
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="#B9BFFF">
+        android:background="#D2E0FF">
         <TextView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/fri"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <ImageView
             android:layout_width="50dp"
@@ -193,7 +195,7 @@
             android:layout_marginStart="10dp"
             android:gravity="center|start"
             android:text="@string/mostly_cloudy_n22c_30c"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
     </LinearLayout>
     <LinearLayout
@@ -203,13 +205,13 @@
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="#B9BFFF">
+        android:background="#D2E0FF">
         <TextView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/sat"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <ImageView
             android:layout_width="50dp"
@@ -224,7 +226,7 @@
             android:layout_marginStart="10dp"
             android:gravity="center|start"
             android:text="@string/partly_cloudy_n24c_31c"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
     </LinearLayout>
     <LinearLayout
@@ -234,13 +236,13 @@
         android:layout_marginRight="20dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:background="#B9BFFF">
+        android:background="#D2E0FF">
         <TextView
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:gravity="center"
             android:text="@string/Sun"
-            android:textColor="@android:color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
         <ImageView
             android:layout_width="50dp"
@@ -255,107 +257,107 @@
             android:layout_marginStart="10dp"
             android:gravity="center|start"
             android:text="@string/thunderstorms_n25c_28c"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20sp"/>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:background="#B9BFFF">
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:text="@string/mon"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"/>
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/type_of_weather"
-            android:gravity="center"
-            android:src="@drawable/thunder"
-            app:tint="#FF007F"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:gravity="center|start"
-            android:text="@string/scattered_thunderstorms_n24c_27c"
-            android:textColor="@color/white"
-            android:textSize="20sp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:background="#B9BFFF">
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:text="@string/tue"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"/>
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/type_of_weather"
-            android:gravity="center"
-            android:src="@drawable/rain_thunder"
-            app:tint="#FF007F"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:gravity="center|start"
-            android:text="@string/showers_n24c_26c"
-            android:textColor="@color/white"
-            android:textSize="20sp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:background="#B9BFFF">
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:gravity="center"
-            android:text="@string/wed"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"/>
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:contentDescription="@string/type_of_weather"
-            android:gravity="center"
-            android:src="@drawable/thunder"
-            app:tint="#FF007F"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:gravity="center|start"
-            android:text="@string/scattered_thunderstorms_n23c_27c"
-            android:textColor="@color/white"
-            android:textSize="20sp"/>
-    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="#D2E0FF">-->
+<!--        <TextView-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/mon"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:contentDescription="@string/type_of_weather"-->
+<!--            android:gravity="center"-->
+<!--            android:src="@drawable/thunder"-->
+<!--            app:tint="#FF007F"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="@string/scattered_thunderstorms_n24c_27c"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"/>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="#D2E0FF">-->
+<!--        <TextView-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/tue"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:contentDescription="@string/type_of_weather"-->
+<!--            android:gravity="center"-->
+<!--            android:src="@drawable/rain_thunder"-->
+<!--            app:tint="#FF007F"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="@string/showers_n24c_26c"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"/>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:background="#D2E0FF">-->
+<!--        <TextView-->
+<!--            android:layout_width="60dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/wed"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"/>-->
+<!--        <ImageView-->
+<!--            android:layout_width="50dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:contentDescription="@string/type_of_weather"-->
+<!--            android:gravity="center"-->
+<!--            android:src="@drawable/thunder"-->
+<!--            app:tint="#FF007F"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:gravity="center|start"-->
+<!--            android:text="@string/scattered_thunderstorms_n23c_27c"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="20sp"/>-->
+<!--    </LinearLayout>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="20dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="#B9BFFF"/>
+        android:background="#D2E0FF"/>
 </LinearLayout>

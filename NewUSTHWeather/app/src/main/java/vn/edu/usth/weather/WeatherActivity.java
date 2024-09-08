@@ -23,11 +23,13 @@ public class WeatherActivity extends AppCompatActivity {
         });
         Log.i(TAG, "onCreate: ");
 
-        // Create a new Fragment to be placed in the activity
+        // ForecastFragment
         ForecastFragment firstFragment = new ForecastFragment();
-
-        // Add the fragment to the 'container' FrameLayout
         getSupportFragmentManager().beginTransaction().add(R.id.main, firstFragment).commit();
+
+        // WeatherFragment
+        WeatherFragment secondFragment = new WeatherFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.main, secondFragment).commit();
     }
 
     public static final String TAG = "Weather Activity";
