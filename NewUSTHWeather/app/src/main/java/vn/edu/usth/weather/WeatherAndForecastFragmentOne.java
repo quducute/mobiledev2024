@@ -1,6 +1,5 @@
 package vn.edu.usth.weather;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,27 +9,27 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ForecastFragment#newInstance} factory method to
+ * Use the {@link WeatherAndForecastFragmentOne#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ForecastFragment extends Fragment {
+public class WeatherAndForecastFragmentOne extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final String TAG = "Weather";
+    ImageButton sb;
+    ImageButton rb;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
-    public ForecastFragment() {
+    public WeatherAndForecastFragmentOne() {
         // Required empty public constructor
     }
 
@@ -40,20 +39,17 @@ public class ForecastFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ForecastFragment.
+     * @return A new instance of fragment WeatherAndForecastFragmentOne.
      */
     // TODO: Rename and change types and number of parameters
-    public static ForecastFragment newInstance(String param1, String param2) {
-        ForecastFragment fragment = new ForecastFragment();
+    public static WeatherAndForecastFragmentOne newInstance(String param1, String param2) {
+        WeatherAndForecastFragmentOne fragment = new WeatherAndForecastFragmentOne();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
     }
-    private static final String TAG = "Weather";
-    ImageButton sb;
-    ImageButton rb;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -68,38 +64,23 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-//        LinearLayout view = new LinearLayout(getContext());
-//        view.setBackgroundColor(Color.GREEN);
-//        view.setOrientation(LinearLayout.VERTICAL);
-//
-//        TextView textView = new TextView(getContext());
-//        textView.setText("Thursday");
-//
-//        ImageView imageView = new ImageView(getContext());
-//        imageView.setImageResource(R.drawable.day_rain_thunder);
-//
-//        view.addView(textView);
-//        view.addView(imageView);
+        View view = inflater.inflate(R.layout.fragment_weather_and_forecast_one, container, false);
 
-        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-
-        ImageButton sb = view.findViewById(R.id.setting_button);
+        ImageButton sb = view.findViewById(R.id.setting_button_1);
         sb.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Log.i(TAG, "Setting!");
-                }
-            }
-        );
+            @Override
+            public void onClick(View view) {
+                                      Log.i(TAG, "Setting!");
+                                  }
+        });
 
-        ImageButton rb = view.findViewById(R.id.refresh_button);
+        ImageButton rb = view.findViewById(R.id.refresh_button_1);
         rb.setOnClickListener(new View.OnClickListener() {
-                @Override
-                    public void onClick(View view) {
-                        Log.i(TAG, "Refresh!");
-                }
-            }
-        );
+            @Override
+            public void onClick(View view) {
+                                      Log.i(TAG, "Refresh!");
+                                  }
+        });
 
         return view;
     }
