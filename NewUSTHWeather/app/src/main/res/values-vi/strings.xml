@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">USTH Thời Tiết</string>
+    <string name="refresh">Tải lại</string>
+    <string name="setting">Cài đặt</string>
+    <string name="mon">THai</string>
+    <string name="tue">TBa</string>
+    <string name="wed">TTư</string>
+    <string name="thu">TNăm</string>
+    <string name="fri">TSáu</string>
+    <string name="sat">TBảy</string>
+    <string name="Sun">CNhật</string>
+    <string name="type_of_weather">Loại thời tiết</string>
+    <string name="partly_cloudy_n24c_31c">Có Mây\n24 – 31 độ C</string>
+    <string name="showers_n24c_30c">Mưa Rào\n24 – 30 độ C</string>
+    <string name="rain_n22c_23c">Mưa\n22 – 23 độ C</string>
+    <string name="scattered_showers_n22c_27c">Mưa Rào Rải Rác\n22 – 27 độ C</string>
+    <string name="mostly_cloudy_n22c_30c">Nhiều Mây\n22 – 30 độ C</string>
+    <string name="thunderstorms_n25c_28c">Bão\n25 – 28 độ C</string>
+    <string name="scattered_thunderstorms_n24c_27c">Bão Rải Rác\n24 – 27 độ C</string>
+    <string name="showers_n24c_26c">Mưa Rào\n24 – 26 độ C</string>
+    <string name="scattered_thunderstorms_n23c_27c">Mưa Rào Rải Rác\n23 – 27 độ C</string>
+    <string name="_12c_n_cloudy">12 độ C\nCó Mây</string>
+    <string name="_31c_n_sunny">31 độ C\nCó Nắng</string>
+    <string name="hanoi">Hà Nội</string>
+</resources>
