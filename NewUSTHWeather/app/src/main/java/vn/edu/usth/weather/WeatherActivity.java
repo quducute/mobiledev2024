@@ -2,17 +2,27 @@ package vn.edu.usth.weather;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
+
 public class WeatherActivity extends AppCompatActivity {
 
+    public static final String TAG = "Weather Activity";
+    ImageButton sb;
+    ImageButton rb;
     ViewPager2 viewPager2;
+    TabLayout tabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +35,42 @@ public class WeatherActivity extends AppCompatActivity {
             return insets;
         });
         Log.i(TAG, "onCreate: ");
-        viewPager2 = findViewById(R.id.pager);
+        viewPager2 = findViewById(R.id.view_pager);
         PagerAdapter adapter = new PagerAdapter(this);
         viewPager2.setAdapter(adapter);
         viewPager2.setOffscreenPageLimit(3);
-    }
+        tabLayout = findViewById(R.id.tab_layout);
 
-    public static final String TAG = "Weather Activity";
+        new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
+            switch (position) {
+                case 0:
+                    tab.setText("HANOI, VIETNAM");
+                    break;
+                case 1:
+                    tab.setText("PARIS, FRANCE");
+                    break;
+                case 2:
+                    tab.setText("TOULOUSE, FRANCE");
+                    break;
+            }
+        }).attach();
+
+        ImageButton sb = findViewById(R.id.setting_button);
+        sb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG, "Setting!");
+            }
+        });
+
+        ImageButton rb = findViewById(R.id.refresh_button);
+        rb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG, "Refresh!");
+            }
+        });
+    }
 
     @Override
     protected void onStart() {

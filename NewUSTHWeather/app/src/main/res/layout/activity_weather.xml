@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".WeatherActivity">
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/pager"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="70dp"
+        android:background="@color/header"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:gravity="start|center"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/refresh_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/header"
+            android:contentDescription="@string/refresh"
+            android:gravity="center"
+            android:src="@drawable/refresh_button"
+            app:tint="@color/white" />
+
+        <ImageButton
+            android:id="@+id/setting_button"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/header"
+            android:contentDescription="@string/setting"
+            android:gravity="center"
+            android:src="@drawable/setting_button"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="scrollable" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

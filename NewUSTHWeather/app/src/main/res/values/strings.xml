@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">USTH Weather</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="refresh">Refresh</string>
     <string name="setting">Setting</string>
     <string name="mon">Mon</string>
@@ -22,6 +20,7 @@
     <string name="showers_n24c_26c">Showers\n24C - 26C</string>
     <string name="scattered_thunderstorms_n23c_27c">Scattered Thunderstorms\n23C - 27C</string>
     <string name="_12c_n_cloudy">12C\nCloudy</string>
+    <string name="_31c_n_sunny">31C\nSunny</string>
     <string name="paris">Paris</string>
     <string name="hanoi">Hanoi</string>
     <string name="toulouse">Toulouse</string>

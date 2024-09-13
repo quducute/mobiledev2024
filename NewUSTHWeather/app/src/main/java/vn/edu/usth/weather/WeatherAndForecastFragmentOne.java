@@ -21,9 +21,6 @@ public class WeatherAndForecastFragmentOne extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-    private static final String TAG = "Weather";
-    ImageButton sb;
-    ImageButton rb;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -64,24 +61,6 @@ public class WeatherAndForecastFragmentOne extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_weather_and_forecast_one, container, false);
-
-        ImageButton sb = view.findViewById(R.id.setting_button_1);
-        sb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                                      Log.i(TAG, "Setting!");
-                                  }
-        });
-
-        ImageButton rb = view.findViewById(R.id.refresh_button_1);
-        rb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                                      Log.i(TAG, "Refresh!");
-                                  }
-        });
-
-        return view;
+        return inflater.inflate(R.layout.fragment_weather_and_forecast_one, container, false);
     }
 }

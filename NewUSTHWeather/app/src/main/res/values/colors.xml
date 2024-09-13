@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="header">#3944BC</color>
+    <color name="weather_background">#E6FDF5</color>
+    <color name="forecast_background">#D2E0FF</color>
+    <color name="forecast_weather">#FF007F</color>
 </resources>
