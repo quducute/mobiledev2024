@@ -15,11 +15,11 @@ public class PagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         switch (position) {
             case 0:
-                return new WeatherAndForecastFragmentOne();
+                return new WeatherAndForecastFragment();
             case 1:
-                return new WeatherAndForecastFragmentTwo();
+                return new WeatherAndForecastFragment();
             case 2:
-                return new WeatherAndForecastFragmentThree();
+                return new WeatherAndForecastFragment();
         }
         return null;
     }

@@ -50,10 +50,17 @@
         android:id="@+id/tab_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:tabMode="scrollable" />
+        android:contentDescription="@string/city_weather"
+        app:tabBackground="@color/tab_back"
+        app:tabIndicatorColor="@color/black"
+        app:tabMode="scrollable"
+        app:tabRippleColor="@color/tab_rip"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/tab_text" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:contentDescription="@string/city_forecast" />
 </LinearLayout>

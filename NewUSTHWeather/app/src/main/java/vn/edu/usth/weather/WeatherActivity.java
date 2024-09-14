@@ -1,9 +1,12 @@
 package vn.edu.usth.weather;
 
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.LinearLayout;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -24,6 +27,18 @@ public class WeatherActivity extends AppCompatActivity {
     ViewPager2 viewPager2;
     TabLayout tabLayout;
 
+    public void setTabDivider() {
+        View root = tabLayout.getChildAt(0);
+        if (root instanceof LinearLayout) {
+            ((LinearLayout) root).setShowDividers(LinearLayout.SHOW_DIVIDER_MIDDLE);
+            GradientDrawable drawable = new GradientDrawable();
+            drawable.setColor(Color.BLACK);
+            drawable.setSize(2, 1);
+            ((LinearLayout) root).setDividerPadding(10);
+            ((LinearLayout) root).setDividerDrawable(drawable);
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +55,7 @@ public class WeatherActivity extends AppCompatActivity {
         viewPager2.setAdapter(adapter);
         viewPager2.setOffscreenPageLimit(3);
         tabLayout = findViewById(R.id.tab_layout);
+        setTabDivider();
 
         new TabLayoutMediator(tabLayout, viewPager2, (tab, position) -> {
             switch (position) {

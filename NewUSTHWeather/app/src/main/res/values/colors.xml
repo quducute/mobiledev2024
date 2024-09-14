@@ -6,4 +6,7 @@
     <color name="weather_background">#E6FDF5</color>
     <color name="forecast_background">#D2E0FF</color>
     <color name="forecast_weather">#FF007F</color>
+    <color name="tab_back">#EEEEEE</color>
+    <color name="tab_text">#AAAAAA</color>
+    <color name="tab_rip">#333333</color>
 </resources>

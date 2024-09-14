@@ -23,4 +23,6 @@
     <string name="_12c_n_cloudy">12 độ C\nCó Mây</string>
     <string name="_31c_n_sunny">31 độ C\nCó Nắng</string>
     <string name="hanoi">Hà Nội</string>
+    <string name="city_forecast">Dự báo</string>
+    <string name="city_weather">Thành phố</string>
 </resources>
