@@ -3,17 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="200dp"
+    android:layout_margin="20sp"
+    android:background="@color/weather_background"
     android:orientation="vertical"
     tools:context=".WeatherFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_margin="20sp"
-        android:background="@color/weather_background">
-
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -43,5 +39,4 @@
                 android:src="@drawable/day_clear"
                 app:tint="@color/header" />
         </RelativeLayout>
-    </FrameLayout>
 </LinearLayout>
